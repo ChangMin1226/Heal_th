@@ -30,11 +30,11 @@ function scrapAddListCall() {
 $(window).scroll(function(){
     //스크롤 이동시 작동코드
 	console.log("스크롤위치",window.scrollY)
-	if ($(this).scrollTop() > 300) {
-      $('#goTop').fadeIn(500);
-    } else {
-      $('#goTop').fadeOut('slow');
-    }
+// 	if ($(this).scrollTop() > 300) {
+//       $('#goTop').fadeIn(500);
+//     } else {
+//       $('#goTop').fadeOut('slow');
+//     }
 	
     if($('#scrapEmpty').length==0){
 		if(!ajaxTrigger){
