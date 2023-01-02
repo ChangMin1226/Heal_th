@@ -96,7 +96,7 @@ $(document).ready(function(){
 </style>
 </head>
 <body>
-<div class="admin_content_subject"><span>게시물 관리</span></div>
+<div class="admin_content_subject"><span>게시글 관리</span></div>
 <div class="btnWrap">
 <h3><button type="button" id="btnNotice" class="menuBtn">공지사항</button><button type="button" id="btnReport" class="menuBtn menuBtnSel">신고글 관리</button></h3>
 </div>
