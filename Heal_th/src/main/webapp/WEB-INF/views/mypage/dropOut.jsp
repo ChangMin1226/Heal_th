@@ -117,7 +117,7 @@ inputInfo:focus{
 }
 .resMsg{
 	position: absolute;
-    top: 85px;
+    top: 290px;
     margin: 7px 0 0;
 }
 
