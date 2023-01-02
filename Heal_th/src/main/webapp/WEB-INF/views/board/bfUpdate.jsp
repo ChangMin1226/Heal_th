@@ -116,7 +116,6 @@ a:focus, a:hover {
     box-sizing: border-box;
     width: 750px;
     height: 800px;
-/*     margin-left: 95px; */
     padding-bottom: 20px;
     margin-left: 225px;
 
@@ -159,7 +158,7 @@ a:focus, a:hover {
     outline-width: 0;
 }
 
-/*Blue Buttons*/
+/*Buttons*/
 #msform .action-button {
     width: 100px;
     background: #7ca3f5;
@@ -188,7 +187,7 @@ a:focus, a:hover {
 
 
 
-/*The background card*/
+/*background card*/
 .card {
     z-index: 0;
     border: none;
@@ -212,7 +211,6 @@ a:focus, a:hover {
     color: lightgrey;
     width: 800px;
     text-align: center;
-/*     margin-left: 67px; */
 	margin-left: 205px;
 }
 
@@ -229,19 +227,16 @@ a:focus, a:hover {
     position: relative;
 }
 
-/*Icons in the ProgressBar*/
+/*ProgressBar Icon*/
 #progressbar #before:before {
-/*     font-family: FontAwesome; */
     content: "\f023";
 }
 
 #progressbar #goal:before {
-/*     font-family: FontAwesome; */
     content: "\f007";
 }
 
 #progressbar #after:before {
-/*     font-family: FontAwesome; */
     content: "\f09d";
 }
 
@@ -275,7 +270,7 @@ a:focus, a:hover {
     z-index: -1;
 }
 
-/*Color number of the step and the connector before it*/
+/*step and the connector before it*/
 #progressbar li.active:before, #progressbar li.active:after {
     background: #7ca3f5;
 }
@@ -314,12 +309,12 @@ $(document).ready(function(){
 	    //Add Class Active
 	    $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
 	    
-	    //show the next fieldset
+	    //next fieldset
 	    next_fs.show(); 
 	    //hide the current fieldset with style
 	    current_fs.animate({opacity: 0}, {
 	        step: function(now) {
-	            // for making fielset appear animation
+	            // fieldset animation
 	            opacity = 1 - now;
 
 	            current_fs.css({
@@ -346,10 +341,10 @@ $(document).ready(function(){
 	    //show the previous fieldset
 	    previous_fs.show();
 
-	    //hide the current fieldset with style
+	    //hide the current fieldset
 	    current_fs.animate({opacity: 0}, {
 	        step: function(now) {
-	            // for making fielset appear animation
+	            // fieldset animation
 	            opacity = 1 - now;
 
 	            current_fs.css({
