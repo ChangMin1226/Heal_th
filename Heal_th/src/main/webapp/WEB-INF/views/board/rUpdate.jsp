@@ -247,19 +247,16 @@ margin-top: 3px;
     position: relative;
 }
 
-/*Icons in the ProgressBar*/
+/*ProgressBar Icon*/
 #progressbar #before:before {
-/*     font-family: FontAwesome; */
     content: "\f023";
 }
 
 #progressbar #goal:before {
-/*     font-family: FontAwesome; */
     content: "\f007";
 }
 
 #progressbar #after:before {
-/*     font-family: FontAwesome; */
     content: "\f09d";
 }
 
@@ -322,12 +319,12 @@ $(document).ready(function() {
 	    //Add Class Active
 	    $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
 	    
-	    //show the next fieldset
+	    //next fieldset
 	    next_fs.show(); 
-	    //hide the current fieldset with style
+	    //hide the current fieldset
 	    current_fs.animate({opacity: 0}, {
 	        step: function(now) {
-	            // for making fielset appear animation
+	        	// fieldset animation
 	            opacity = 1 - now;
 
 	            current_fs.css({
@@ -350,13 +347,13 @@ $(document).ready(function() {
 	    //Remove class active
 	    $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
 	    
-	    //show the previous fieldset
+	    //previous fieldset
 	    previous_fs.show();
 
-	    //hide the current fieldset with style
+	    //hide the current fieldset
 	    current_fs.animate({opacity: 0}, {
 	        step: function(now) {
-	            // for making fielset appear animation
+	        	// fieldset animation
 	            opacity = 1 - now;
 
 	            current_fs.css({

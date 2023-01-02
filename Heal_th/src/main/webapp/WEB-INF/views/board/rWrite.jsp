@@ -164,7 +164,6 @@ margin-top: 3px;
     margin-top: 2px;
     width: 100%;
     box-sizing: border-box;
-/*     font-family: montserrat; */
     color: #2C3E50;
     font-size: 16px;
     letter-spacing: 1px;
@@ -249,19 +248,16 @@ margin-top: 3px;
     position: relative;
 }
 
-/*Icons in the ProgressBar*/
+/*ProgressBar Icon*/
 #progressbar #before:before {
-/*     font-family: FontAwesome; */
     content: "\f023";
 }
 
 #progressbar #goal:before {
-/*     font-family: FontAwesome; */
     content: "\f007";
 }
 
 #progressbar #after:before {
-/*     font-family: FontAwesome; */
     content: "\f09d";
 }
 
@@ -295,7 +291,7 @@ margin-top: 3px;
     z-index: -1;
 }
 
-/*Color number of the step and the connector before it*/
+/*step and the connector before it*/
 #progressbar li.active:before, #progressbar li.active:after {
     background: #7ca3f5;
 }  
@@ -376,12 +372,12 @@ $(document).ready(function() {
 	    //Add Class Active
 	    $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
 	    
-	    //show the next fieldset
+	    //next fieldset
 	    next_fs.show(); 
-	    //hide the current fieldset with style
+	    //hide the current fieldset
 	    current_fs.animate({opacity: 0}, {
 	        step: function(now) {
-	            // for making fielset appear animation
+	        	// fieldset animation
 	            opacity = 1 - now;
 
 	            current_fs.css({
@@ -412,12 +408,12 @@ $(".next2").click(function(){
 	    //Add Class Active
 	    $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
 	    
-	    //show the next fieldset
+	    //next fieldset
 	    next_fs.show(); 
-	    //hide the current fieldset with style
+	    //hide the current fieldset
 	    current_fs.animate({opacity: 0}, {
 	        step: function(now) {
-	            // for making fielset appear animation
+	        	// fieldset animation
 	            opacity = 1 - now;
 
 	            current_fs.css({
@@ -455,12 +451,12 @@ $(".next3").click(function(){
     //Add Class Active
     $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
     
-    //show the next fieldset
+    //next fieldset
     next_fs.show(); 
-    //hide the current fieldset with style
+    //hide the current fieldset
     current_fs.animate({opacity: 0}, {
         step: function(now) {
-            // for making fielset appear animation
+        	// fieldset animation
             opacity = 1 - now;
 
             current_fs.css({
@@ -518,13 +514,13 @@ $(".next3").click(function(){
 	    //Remove class active
 	    $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
 	    
-	    //show the previous fieldset
+	    //previous fieldset
 	    previous_fs.show();
 
-	    //hide the current fieldset with style
+	    //hide the current fieldset
 	    current_fs.animate({opacity: 0}, {
 	        step: function(now) {
-	            // for making fielset appear animation
+	        	// fieldset animation
 	            opacity = 1 - now;
 
 	            current_fs.css({

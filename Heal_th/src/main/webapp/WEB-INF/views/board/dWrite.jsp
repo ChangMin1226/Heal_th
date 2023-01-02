@@ -284,12 +284,12 @@ $(document).ready(function(){
 	    //Add Class Active
 	    $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
 	    
-	    //show the next fieldset
+	    //next fieldset
 	    next_fs.show(); 
-	    //hide the current fieldset with style
+	    //hide the current fieldset
 	    current_fs.animate({opacity: 0}, {
 	        step: function(now) {
-	            // for making fielset appear animation
+	        	// fieldset animation
 	            opacity = 1 - now;
 
 	            current_fs.css({
@@ -320,12 +320,12 @@ $(".next2").click(function(){
 	    //Add Class Active
 	    $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
 	    
-	    //show the next fieldset
+	    //next fieldset
 	    next_fs.show(); 
-	    //hide the current fieldset with style
+	    //hide the current fieldset
 	    current_fs.animate({opacity: 0}, {
 	        step: function(now) {
-	            // for making fielset appear animation
+	        	// fieldset animation
 	            opacity = 1 - now;
 
 	            current_fs.css({
@@ -349,13 +349,13 @@ $(".next2").click(function(){
 	    //Remove class active
 	    $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
 	    
-	    //show the previous fieldset
+	    //previous fieldset
 	    previous_fs.show();
 
-	    //hide the current fieldset with style
+	    //hide the current fieldset
 	    current_fs.animate({opacity: 0}, {
 	        step: function(now) {
-	            // for making fielset appear animation
+	        	// fieldset animation
 	            opacity = 1 - now;
 
 	            current_fs.css({
