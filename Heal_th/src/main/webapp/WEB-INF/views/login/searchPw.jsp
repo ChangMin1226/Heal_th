@@ -109,7 +109,7 @@ $(document).ready(function(){
 	 
 	 //클릭시 비밀번호 찾기
 	 $("#btnGotoSearchPw").click(function(){
-		console.log("비밀번호 찾기 클릭") 
+		console.log("비밀번호 찾기 클릭")  
 		
 		if(validate()){
 			location.href="/login/makeNewPw"
@@ -147,7 +147,7 @@ function validate(){
 	}
 
 // 	본인인증번호가 안되었을 때 
-	if(document.getElementById("code").value =="") {
+	if(document.getElementById("pwSmsCode").value =="") {
 		console.log("본인인증입력 알림")
 		document.getElementById("result_code").innerHTML="<span style='color:red;'>* 본인인증을 해주세요</span>"
       return false; 		    	

@@ -48,7 +48,7 @@
     google.charts.setOnLoadCallback(drawChart);
       
     function drawChart() {
-      var jsonData = $.ajax({
+      var jsonData = $.ajax({ //데이터베이스 연결 방법 : Ajax
     	  type: "post",
           url: "/mypage/sendData",
           dataType: "json",

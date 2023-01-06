@@ -204,6 +204,8 @@ public class MypageServiceImpl implements MypageService {
 		 
 		 //----------------------------------
 		 //첨부파일 정보 DB 기록하기
+		 
+		 //DTO에 이름 저장하기
 		   photoFile.setOriginName(originName);
 		   photoFile.setStoredName(storedName);
 		   
@@ -216,7 +218,7 @@ public class MypageServiceImpl implements MypageService {
 			//파일번호 구하기
 			   int fileNo = mypageDao.selectfileNo(photoFile);
 			   logger.info("파일 번호 : {}",fileNo);
-			   photoFile.setFileNo(fileNo);
+			   photoFile.setFileNo(fileNo); //파일번호 dto에 저장
 			   
 			   mypageDao.updateProfile(photoFile);
 			  	
